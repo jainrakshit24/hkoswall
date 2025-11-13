@@ -15,8 +15,9 @@ export default function VisitUs() {
     contact: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -29,13 +30,33 @@ export default function VisitUs() {
       return;
     }
 
-    // In production, this would send to a backend
-    toast({
-      title: "Message Received",
-      description: "Thank you for your enquiry. We'll get back to you soon!",
-    });
-    
-    setFormData({ name: "", contact: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzsoPjPt0YykpXyeb0jTAS4998M9spUomegNLBNPpIN-FZkSDsN51bh3TzKaY8NOL2F/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      toast({
+        title: "Message Received",
+        description: "Thank you for your enquiry. We'll get back to you soon!",
+      });
+      
+      setFormData({ name: "", contact: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or call us directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -76,8 +97,7 @@ export default function VisitUs() {
                       <div>
                         <h3 className="font-semibold mb-2">Address</h3>
                         <p className="text-muted-foreground">
-                          Shop No. [To be provided]<br />
-                          Bapu Bazar<br />
+                          Shop No. 176-179, Bapu Bazar,<br />
                           Jaipur, Rajasthan, India
                         </p>
                       </div>
@@ -92,7 +112,7 @@ export default function VisitUs() {
                       <div>
                         <h3 className="font-semibold mb-2">Phone</h3>
                         <p className="text-muted-foreground">
-                          +91 [To be provided]
+                          +91 141-4043400
                         </p>
                         <p className="text-sm text-muted-foreground mt-1">
                           For enquiries and wholesale orders
@@ -109,8 +129,8 @@ export default function VisitUs() {
                       <div>
                         <h3 className="font-semibold mb-2">Hours of Operation</h3>
                         <p className="text-muted-foreground">
-                          Monday - Saturday: 10:00 AM - 8:00 PM<br />
-                          Sunday: Closed
+                          Monday - Saturday: 10:30 AM - 9:00 PM<br />
+                          Sunday: 11:00 AM - 7:00 PM
                         </p>
                       </div>
                     </CardContent>
@@ -124,7 +144,7 @@ export default function VisitUs() {
                       <div>
                         <h3 className="font-semibold mb-2">Email</h3>
                         <p className="text-muted-foreground">
-                          [Email to be provided]
+                          info@hkoswal.com
                         </p>
                       </div>
                     </CardContent>
@@ -172,8 +192,8 @@ export default function VisitUs() {
                         required
                       />
                     </div>
-                    <Button type="submit" size="lg" className="w-full">
-                      Send Message
+                    <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                     <div className="bg-muted/50 rounded-md p-3">
                       <p className="text-xs text-muted-foreground text-center leading-relaxed">
