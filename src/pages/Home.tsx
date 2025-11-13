@@ -28,14 +28,14 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl font-serif font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Four Generations of Family Heritage, Trust & Community Service
+                Four Generations of Family Heritage, Trust & Service
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since the 1960s, HK Oswal Hosiery Sales Depot has been Jaipur's trusted name for quality hosiery and garments. Built on family values, honest dealings, and genuine care—we've served over 50,000 families in Bapu Bazar and beyond with the same dedication that started it all.
+                Since July 1957, H.K. Oswal has been Jaipur’s most trusted destination for quality ready made garments and premium woolen wear. Rooted in family values, honest craftsmanship, and genuine care, our legacy spans over 68 years and several generations of dedicated service. We have proudly served more than a million families across Jaipur and beyond, building lasting relationships through the same commitment that inspired our founding.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
-                  <span className="font-bold text-primary">60+ Years</span>
+                  <span className="font-bold text-primary">68+ Years</span>
                   <span className="text-muted-foreground">of Excellence</span>
                 </div>
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
@@ -43,7 +43,7 @@ export default function Home() {
                   <span className="text-muted-foreground">of Expertise</span>
                 </div>
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
-                  <span className="font-bold text-primary">50,000+</span>
+                  <span className="font-bold text-primary">1,000,000+</span>
                   <span className="text-muted-foreground">Happy Customers</span>
                 </div>
               </div>
@@ -73,9 +73,9 @@ export default function Home() {
       {/* Animated Stats */}
       <AnimatedStats 
         stats={[
-          { value: 60, suffix: "+", label: "Years in Bapu Bazar" },
-          { value: 4, label: "Founding Brothers" },
-          { value: 1000, suffix: "s", label: "Happy Customers" },
+          { value: 68, suffix: "+", label: "Years in Bapu Bazar" },
+          { value: 4, label: "Generations of Expertise" },
+          { value: 1000000, suffix: "+", label: "Happy Customers" },
           { value: 100, suffix: "%", label: "Quality Promise" },
         ]}
       />
@@ -117,7 +117,7 @@ export default function Home() {
                   <h2 className="text-2xl font-serif font-semibold">Our Presence</h2>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Located in the heart of Bapu Bazar, we've been serving the community for generations. Visit us to experience the warmth of personal service and quality products that have made us a trusted name.
+                  Located in the heart of Jaipur, we've been serving the community for generations. Visit us to experience the warmth of personal service and quality products that have made us a trusted name.
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto text-primary">
                   <Link to="/visit-us">
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold mb-4">Gallery Highlights</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Explore our store, products, and the vibrant atmosphere of Bapu Bazar
+              Explore our store, products, and the vibrant atmosphere of Jaipur
             </p>
           </div>
           <Carousel
@@ -251,12 +251,12 @@ export default function Home() {
               {
                 icon: Shield,
                 title: "Quality Assured",
-                desc: "Every product meets our stringent quality standards built over generations",
+                desc: "Every garment is crafted to meet the highest benchmarks of durability, comfort, and lasting satisfaction.",
               },
               {
                 icon: Users,
-                title: "Family Legacy",
-                desc: "Multi-generational expertise in hosiery and garments since our inception",
+                title: "Generational Expertise",
+                desc: "Decades of proven knowledge and inheritance of textile excellence across four generations.",
               },
               {
                 icon: Heart,
@@ -266,7 +266,7 @@ export default function Home() {
               {
                 icon: Package,
                 title: "Curated Selection",
-                desc: "Carefully chosen products that balance quality, comfort, and value",
+                desc: "Handpicked brands and exclusive styles, curated for today’s fashionable families seeking something special.",
               },
             ].map((feature) => (
               <Card key={feature.title} className="border-none shadow-md hover:shadow-lg transition-shadow text-center">
@@ -348,7 +348,7 @@ export default function Home() {
             Experience the Legacy
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Visit us at our Bapu Bazar location and discover why families have trusted us for generations. 
+            Visit us at our Store and discover why families have trusted us for generations. 
             From hosiery to garments, we're here to serve you with quality and care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
