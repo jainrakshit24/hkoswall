@@ -48,7 +48,7 @@ export default function VisitUs() {
               Visit Our Store
             </h1>
             <p className="text-lg text-muted-foreground mb-4">
-              Find us in the heart of Bapu Bazar, Jaipur. We look forward to serving you.
+              Find us in the heart of Jaipur. We look forward to serving you.
             </p>
             <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mt-6">
               <p className="text-sm font-medium text-foreground">
@@ -195,7 +195,7 @@ export default function VisitUs() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-serif font-bold mb-4">Find Us at Bapu Bazar</h2>
             <p className="text-muted-foreground">
-              Located in the vibrant Bapu Bazar area of Jaipur - Click to open in Google Maps
+              Located in the vibrant area of Jaipur - Click to open in Google Maps
             </p>
           </div>
           <a
@@ -206,7 +206,7 @@ export default function VisitUs() {
           >
             <img
               src={storeLocation}
-              alt="HK Oswal Hosiery store in Bapu Bazar, Jaipur"
+              alt="HK Oswal store in Jaipur"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </a>
