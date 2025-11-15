@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-serif font-semibold mb-4">HK Oswal Hosiery Sales Depot</h3>
+            <img src="/src/assets/hk4.png" alt="HK Oswal Hosiery Sales Depot" className="h-40 mb-4" />
             <p className="text-sm text-muted-foreground">
               A legacy of quality hosiery and garments in Bapu Bazar, Jaipur since generations.
             </p>
