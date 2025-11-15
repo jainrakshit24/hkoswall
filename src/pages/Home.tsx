@@ -98,7 +98,7 @@ export default function Home() {
                   <h2 className="text-2xl font-serif font-semibold">Our Story</h2>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  HK Oswal Hosiery Sales Depot has grown through generations with a simple promise—quality, value, and lasting relationships. Discover our journey from a small shop to a trusted name in Bapu Bazar.
+                  Step inside the legend. Meet the minds, the moves, and the legacy behind Jaipur’s most iconic garments and woolen destination.
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto text-primary">
                   <Link to="/about">
