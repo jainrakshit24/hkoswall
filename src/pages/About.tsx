@@ -15,29 +15,33 @@ export default function About() {
       name: "Late Shri Hanuman Prasad Oswal",
       role: "Founder & Visionary",
       contribution: "Established HK Oswal with the vision of bringing quality hosiery to Jaipur. His integrity and dedication laid the foundation for generations of trust in Bapu Bazar.",
-      image: founder1, // Replace this image file with actual owner photo
-      years: "1960s - 1980s"
+      image: founder1,
+      years: "1960s - 1980s",
+      highlight: "First Shop in Bapu Bazar"
     },
     {
       name: "Late Shri Kishan Lal Oswal",
       role: "Co-Founder & Pioneer",
       contribution: "Pioneered wholesale operations and built lasting relationships with suppliers across India. His business acumen helped expand our reach while maintaining quality standards.",
-      image: founder2, // Replace this image file with actual owner photo
-      years: "1965 - 1990s"
+      image: founder2,
+      years: "1965 - 1990s",
+      highlight: "Wholesale Operations Pioneer"
     },
     {
-      name: "Late Shri Ram Kishan Oswal",
+      name: "Mr. Praveen Jain",
       role: "Legacy Builder",
       contribution: "Strengthened our presence in Bapu Bazar and introduced diverse product lines. His commitment to customer service set the standard we uphold today.",
-      image: founder3, // Replace this image file with actual owner photo
-      years: "1970s - 2000s"
+      image: founder3,
+      years: "1970s - 2000s",
+      highlight: "Customer Service Excellence"
     },
     {
-      name: "Late Shri Gopal Lal Oswal",
+      name: "Mr. Shray Jain",
       role: "Tradition Keeper",
       contribution: "Preserved family values while adapting to changing times. His wisdom in balancing tradition with progress ensured the business thrived across generations.",
-      image: founder4, // Replace this image file with actual owner photo
-      years: "1975 - 2010s"
+      image: founder4,
+      years: "1975 - 2010s",
+      highlight: "Tradition Meets Innovation"
     }
   ];
 
@@ -84,7 +88,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Fore Fathers */}
+      {/* Our Fore Fathers - Enhanced Interactive Version */}
       <section className="py-16 lg:py-20 bg-muted/30">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -93,30 +97,71 @@ export default function About() {
             </div>
             <h2 className="text-3xl font-serif font-bold mb-4">Our Fore Fathers</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The visionary leaders who built HK Oswal and shaped its legacy in Jaipur</p>
+              The visionary leaders who built HK Oswal and shaped its legacy in Jaipur
+            </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
             {forefathers.map((founder, index) => (
-              <Card key={index} className="border-none shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
-                {/* Image Section - Main Focus */}
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary/5 to-accent/10">
+              <Card 
+                key={index} 
+                className="border-none shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group cursor-pointer bg-gradient-to-br from-background to-muted/20"
+              >
+                {/* Image Section with Interactive Overlay */}
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img 
                     src={founder.image} 
                     alt={founder.name}
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                    <span className="text-xs font-semibold text-primary">Founder {index + 1}</span>
+                  {/* Animated Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-500"></div>
+                  
+                  {/* Decorative Corner Element */}
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 transform rotate-45 translate-x-12 -translate-y-12 group-hover:bg-primary/20 transition-all duration-500"></div>
+                  
+                  {/* Years Badge - Top Left */}
+                  <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm px-4 py-2 rounded-full transform group-hover:scale-110 transition-all duration-300">
+                    <span className="text-xs font-bold text-white">{founder.years}</span>
                   </div>
+                  
+                  {/* Bottom Info - Slides up on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                    <div className="space-y-2">
+                      <div className="inline-block bg-accent/90 backdrop-blur-sm px-3 py-1 rounded-full mb-2 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
+                        <span className="text-xs font-semibold text-accent-foreground">{founder.highlight}</span>
+                      </div>
+                      <h3 className="text-2xl font-serif font-bold text-white drop-shadow-2xl transform group-hover:translate-x-2 transition-all duration-300">
+                        {founder.name}
+                      </h3>
+                      <p className="text-sm font-semibold text-white/95 drop-shadow-lg transform group-hover:translate-x-2 transition-all duration-300 delay-75">
+                        {founder.role}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative Line Animation */}
+                  <div className="absolute bottom-0 left-0 h-1 bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
                 </div>
-                {/* Content Section */}
-                <CardContent className="p-6 lg:p-8">
-                  <div className="mb-3">
-                    <h3 className="text-xl font-serif font-bold mb-1">{founder.name}</h3>
-                    <p className="text-sm font-semibold text-primary">{founder.role}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{founder.years}</p>
+
+                {/* Content Section with Hover Effect */}
+                <CardContent className="p-6 lg:p-8 relative">
+                  {/* Decorative Quote Mark */}
+                  <div className="absolute top-4 right-6 text-6xl font-serif text-primary/10 group-hover:text-primary/20 transition-colors duration-300">
+                    "
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-sm">{founder.contribution}</p>
+                  
+                  <div className="relative space-y-3">
+                    <p className="text-muted-foreground leading-relaxed text-sm group-hover:text-foreground transition-colors duration-300">
+                      {founder.contribution}
+                    </p>
+                    
+                    {/* Interactive Bottom Border */}
+                    <div className="pt-4 border-t border-border/50 group-hover:border-primary/30 transition-colors duration-300">
+                      <p className="text-xs text-primary/70 font-medium group-hover:text-primary transition-colors duration-300">
+                        Legacy • Heritage • Excellence
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
