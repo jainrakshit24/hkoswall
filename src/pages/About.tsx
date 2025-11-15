@@ -7,6 +7,7 @@ import founder1 from "@/assets/founders/founder-1.jpg";
 import founder2 from "@/assets/founders/founder-2.jpg";
 import founder3 from "@/assets/founders/founder-3.jpg";
 import founder4 from "@/assets/founders/founder-4.jpg";
+import heroImage from "@/assets/hero-storefront.jpg";
 
 export default function About() {
   const forefathers = [
@@ -77,23 +78,22 @@ export default function About() {
               Our History & Presence
             </h1>
             <p className="text-lg text-muted-foreground">
-              HK Oswal Hosiery Sales Depot has grown through generations with a simple promise—quality, value, and lasting relationships.
+              HK Oswal has grown through generations with a simple promise—quality, value, and lasting relationships.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Four Fathers */}
+      {/* Our Fore Fathers */}
       <section className="py-16 lg:py-20 bg-muted/30">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-4">
               <Users2 className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl font-serif font-bold mb-4">Our Four Fathers</h2>
+            <h2 className="text-3xl font-serif font-bold mb-4">Our Fore Fathers</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The visionary leaders who built HK Oswal Hosiery Sales Depot and shaped its legacy in Bapu Bazar
-            </p>
+              The visionary leaders who built HK Oswal and shaped its legacy in Jaipur</p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
             {forefathers.map((founder, index) => (
@@ -130,8 +130,8 @@ export default function About() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
               <img
-                src={vintageImage}
-                alt="Vintage photograph of HK Oswal Hosiery's early years"
+                src={heroImage}
+                alt="Front view of HK Oswal Hosiery store in Bapu Bazar"
                 className="rounded-lg shadow-xl w-full"
               />
             </div>
@@ -191,13 +191,13 @@ export default function About() {
             <div className="space-y-6 order-2 lg:order-1">
               <h2 className="text-3xl font-serif font-bold">Today & Beyond</h2>
               <p className="text-muted-foreground">
-                As we continue to serve the community that has supported us for generations, our values remain unchanged. We believe in building relationships that last, offering quality that speaks for itself, and maintaining the personal touch that has always defined us.
+                As we continue to serve the families and community who have placed their trust in us for generations, our core values remain strong. We're committed to forging lasting relationships, delivering superior quality, and offering the warmth and personal touch that define H.K. Oswal.
               </p>
               <p className="text-muted-foreground">
-                Whether you're a long-time customer or visiting us for the first time, you'll find the same warmth, expertise, and dedication that has made HK Oswal Hosiery Sales Depot a trusted name in Bapu Bazar.
+                Whether you're a long-time customer or visiting us for the first time, you'll find the same warmth, expertise, and dedication that has made H.K. Oswal a trusted name in Jaipur.
               </p>
               <p className="text-muted-foreground">
-                Our doors remain open to wholesale and retail customers alike, continuing a tradition of service that spans generations. We look forward to welcoming you and being part of your story, just as you've been part of ours.
+                Our doors are always open to both wholesale and retail customers. Carrying on a proud tradition of service that transcends generations, we look forward to welcoming you and becoming part of your journey just as you are a part of ours.
               </p>
             </div>
             <div className="order-1 lg:order-2">

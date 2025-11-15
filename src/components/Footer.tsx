@@ -17,15 +17,15 @@ export function Footer() {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Shop No. [To be provided], Bapu Bazar<br />Jaipur, Rajasthan, India</span>
+                <span>Shop No. 176-179, Bapu Bazar<br />Jaipur, Rajasthan, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+91 [To be provided]</span>
+                <span>+91 141-4043400</span>
               </div>
               <div className="flex items-start gap-2">
                 <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Mon-Sat: 10:00 AM - 8:00 PM<br />Sunday: Closed</span>
+                <span>Monday - Saturday: 10:30 AM - 9:00 PM<br />Sunday: 11:00 AM - 7:00 PM</span>
               </div>
             </div>
           </div>

@@ -28,14 +28,14 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl font-serif font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Four Generations of Family Heritage, Trust & Service
+                Jaipur’s Premium Store for Readymade Garments & Woolens
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since July 1957, H.K. Oswal has been Jaipur’s most trusted destination for quality ready made garments and premium woolen wear. Rooted in family values, honest craftsmanship, and genuine care, our legacy spans over 68 years and several generations of dedicated service. We have proudly served more than a million families across Jaipur and beyond, building lasting relationships through the same commitment that inspired our founding.
+                Since July 1957, H.K. Oswal has proudly stood as Jaipur’s leading destination for premium ready made garments and fine woolen wear. Built on a foundation of family values, skilled craftsmanship, and genuine care, our tradition spans over 68 years and multiple generations. We’ve built lasting relationships with more than a million families, earning trust through unwavering commitment and timeless quality.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
-                  <span className="font-bold text-primary">68+ Years</span>
+                  <span className="font-bold text-primary">65+ Years</span>
                   <span className="text-muted-foreground">of Excellence</span>
                 </div>
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
@@ -43,7 +43,7 @@ export default function Home() {
                   <span className="text-muted-foreground">of Expertise</span>
                 </div>
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
-                  <span className="font-bold text-primary">1,000,000+</span>
+                  <span className="font-bold text-primary">10,00,000+</span>
                   <span className="text-muted-foreground">Happy Customers</span>
                 </div>
               </div>
@@ -73,9 +73,9 @@ export default function Home() {
       {/* Animated Stats */}
       <AnimatedStats 
         stats={[
-          { value: 68, suffix: "+", label: "Years in Bapu Bazar" },
+          { value: 65, suffix: "+", label: "Years in Bapu Bazar" },
           { value: 4, label: "Generations of Expertise" },
-          { value: 1000000, suffix: "+", label: "Happy Customers" },
+          { value: 10, suffix: "Lakh+", label: "Happy Customers" },
           { value: 100, suffix: "%", label: "Quality Promise" },
         ]}
       />
