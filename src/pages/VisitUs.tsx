@@ -91,8 +91,8 @@ export default function VisitUs() {
                 <div className="space-y-6">
                   <Card>
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <MapPin className="h-6 w-6 text-primary" />
+                      <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-3 w-3 text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2">Address</h3>
@@ -106,8 +106,8 @@ export default function VisitUs() {
 
                   <Card>
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Phone className="h-6 w-6 text-primary" />
+                      <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-3 w-3 text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2">Phone</h3>
@@ -123,8 +123,8 @@ export default function VisitUs() {
 
                   <Card>
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Clock className="h-6 w-6 text-primary" />
+                      <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Clock className="h-3 w-3 text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2">Hours of Operation</h3>
@@ -138,8 +138,8 @@ export default function VisitUs() {
 
                   <Card>
                     <CardContent className="p-6 flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Mail className="h-6 w-6 text-primary" />
+                      <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Mail className="h-3 w-3 text-primary" />
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2">Email</h3>
@@ -222,7 +222,7 @@ export default function VisitUs() {
             href="https://www.google.com/maps/search/?api=1&query=Bapu+Bazaar+Jaipur"
             target="_blank"
             rel="noopener noreferrer"
-            className="block aspect-video w-full rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow cursor-pointer group"
+            className="block w-full max-w-2xl mx-auto h-104 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow cursor-pointer group"
           >
             <img
               src={storeLocation}

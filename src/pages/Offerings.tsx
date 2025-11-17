@@ -272,7 +272,7 @@ export default function Offerings() {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground mt-6">
-                  📍 Located in Bapu Bazar, Jaipur | No online sales - Visit us in person
+                  📍 Located in Bapu Bazar, Jaipur 
                 </p>
               </CardContent>
             </div>
