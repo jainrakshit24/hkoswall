@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <img src="/src/assets/hk4.png" alt="HK Oswal Hosiery Sales Depot" className="h-40 mb-4" />
             <p className="text-sm text-muted-foreground">
-              A legacy of quality hosiery and garments in Bapu Bazar, Jaipur since generations.
+              A legacy of quality hosiery and garments<br /> in Bapu Bazar, Jaipur since generations.
             </p>
           </div>
           

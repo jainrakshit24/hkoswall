@@ -12,6 +12,7 @@ import productImage from "@/assets/product-detail.jpg";
 import vintageImage from "@/assets/vintage-heritage.jpg";
 import streetImage from "@/assets/bapu-bazar-street.jpg";
 import ladiesWearImage from "@/assets/ladies-wear.jpg";
+import temphome from "@/assets/temp_home.jpg";
 
 export default function Home() {
   const highlightsAnim = useScrollAnimation(0.2);
@@ -61,7 +62,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                src={heroImage}
+                src={temphome}
                 alt="HK Oswal Hosiery storefront in Bapu Bazar, Jaipur"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
@@ -250,8 +251,13 @@ export default function Home() {
             {[
               {
                 icon: Shield,
-                title: "Quality Assured",
-                desc: "Every garment is crafted to meet the highest benchmarks of durability, comfort, and lasting satisfaction.",
+                title: (
+                  <>
+                    Biggest Shop in <br />
+                    Heritage City
+                  </>
+                ),
+                desc: "Established in 1957, Largest and most trusted Woolen and garments store.",
               },
               {
                 icon: Users,
@@ -268,8 +274,8 @@ export default function Home() {
                 title: "Curated Selection",
                 desc: "Handpicked brands and exclusive styles, curated for today’s fashionable families seeking something special.",
               },
-            ].map((feature) => (
-              <Card key={feature.title} className="border-none shadow-md hover:shadow-lg transition-shadow text-center">
+            ].map((feature, idx) => (
+              <Card key={typeof feature.title === 'string' ? feature.title : idx} className="border-none shadow-md hover:shadow-lg transition-shadow text-center">
                 <CardContent className="p-8">
                   <div className="mx-auto h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <feature.icon className="h-7 w-7 text-primary" />

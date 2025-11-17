@@ -12,27 +12,26 @@ import heroImage from "@/assets/hero-storefront.jpg";
 export default function About() {
   const forefathers = [
     {
-      name: "Late Shri Hanuman Prasad Oswal",
+      name: "Late Sh Hans Raj Ji Jain",
       role: "Founder & Visionary",
       contribution: "Established HK Oswal with the vision of bringing quality hosiery to Jaipur. His integrity and dedication laid the foundation for generations of trust in Bapu Bazar.",
       image: founder1,
-      years: "1960s - 1980s",
-      highlight: "First Shop in Bapu Bazar"
+      years: "Since 1957",
     },
     {
-      name: "Late Shri Kishan Lal Oswal",
+      name: "Sh. Nem Nath Jain",
       role: "Co-Founder & Pioneer",
-      contribution: "Pioneered wholesale operations and built lasting relationships with suppliers across India. His business acumen helped expand our reach while maintaining quality standards.",
+      contribution: "Pioneered operations and built lasting relationships with suppliers across India. His business acumen helped expand our reach while maintaining quality standards.",
       image: founder2,
-      years: "1965 - 1990s",
-      highlight: "Wholesale Operations Pioneer"
+      years: "Since 1960",
+      highlight: "Operations Pioneer"
     },
     {
       name: "Mr. Praveen Jain",
       role: "Legacy Builder",
       contribution: "Strengthened our presence in Bapu Bazar and introduced diverse product lines. His commitment to customer service set the standard we uphold today.",
       image: founder3,
-      years: "1970s - 2000s",
+      years: "Since 1975",
       highlight: "Customer Service Excellence"
     },
     {
@@ -40,35 +39,35 @@ export default function About() {
       role: "Tradition Keeper",
       contribution: "Preserved family values while adapting to changing times. His wisdom in balancing tradition with progress ensured the business thrived across generations.",
       image: founder4,
-      years: "1975 - 2010s",
+      years: "Since 2009",
       highlight: "Tradition Meets Innovation"
     }
   ];
 
   const milestones = [
     {
-      year: "1960s",
+      year: "1957s",
       title: "The Beginning",
       description: "Founded with a vision to provide quality hosiery and garments to the people of Jaipur.",
-      details: "• Established first shop in Bapu Bazar\n• Built initial supplier network\n• Focused on pure cotton hosiery"
+      details: "• Established biggest shop in Heritage city\n• Built initial supplier network\n• Focused on pure Wool and Yarn balls"
     },
     {
-      year: "1980s",
+      year: "1970s",
       title: "Growing Trust",
-      description: "Expanded our range and became a trusted name in Bapu Bazar for wholesale and retail.",
-      details: "• Added ladies wear and kids sections\n• Expanded wholesale operations\n• Served 10,000+ customers annually"
+      description: "Expanded our range and became a trusted name in Jaipur for wholesale and retail.",
+      details: "• Added knitting needles and Woolen garments\n• Expanded operations\n• Served 5,000+ customers annually"
     },
     {
-      year: "2000s",
+      year: "1990s",
       title: "Next Generation",
       description: "Family values passed down, maintaining the same commitment to quality and service.",
-      details: "• Third generation joined the business\n• Modernized inventory systems\n• Expanded seasonal collections"
+      details: "• Addition of new product lines \n• Modernized inventory systems\n• Pioneered fashionable party wear"
     },
     {
       year: "Today",
       title: "Continuing Legacy",
       description: "Serving generations of customers with unwavering dedication to quality and trust.",
-      details: "• 50,000+ satisfied customers\n• 4 generations of expertise\n• Trusted by families across Jaipur"
+      details: "• Millions of satisfied customers\n• 4 generations of expertise\n• Trusted by families across India"
     }
   ];
 
@@ -82,7 +81,7 @@ export default function About() {
               Our History & Presence
             </h1>
             <p className="text-lg text-muted-foreground">
-              HK Oswal has grown through generations with a simple promise—quality, value, and lasting relationships.
+              HK Oswal has grown through generations with a simple promise quality, value, and lasting relationships.
             </p>
           </div>
         </div>
@@ -239,7 +238,7 @@ export default function About() {
                 As we continue to serve the families and community who have placed their trust in us for generations, our core values remain strong. We're committed to forging lasting relationships, delivering superior quality, and offering the warmth and personal touch that define H.K. Oswal.
               </p>
               <p className="text-muted-foreground">
-                Whether you're a long-time customer or visiting us for the first time, you'll find the same warmth, expertise, and dedication that has made H.K. Oswal a trusted name in Jaipur.
+                Whether you're a long-time customer or visiting us for the first time, you'll find the same warmth, expertise, and dedication that has made H.K. Oswal a trusted name in India.
               </p>
               <p className="text-muted-foreground">
                 Our doors are always open to both wholesale and retail customers. Carrying on a proud tradition of service that transcends generations, we look forward to welcoming you and becoming part of your journey just as you are a part of ours.
