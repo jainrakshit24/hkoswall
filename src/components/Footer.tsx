@@ -1,12 +1,12 @@
 import { MapPin, Phone, Clock } from "lucide-react";
-
+import footerlogo from "@/assets/hk4.png";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <img src="/src/assets/hk4.png" alt="HK Oswal Hosiery Sales Depot" className="h-40 mb-4" />
+            <img src={footerlogo} alt="HK Oswal Hosiery Sales Depot" className="h-40 mb-4" />
             <p className="text-sm text-muted-foreground">
               A legacy of quality hosiery and garments<br /> in Bapu Bazar, Jaipur since generations.
             </p>
