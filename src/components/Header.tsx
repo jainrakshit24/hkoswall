@@ -23,11 +23,15 @@ export function Header() {
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
 
+  const handleNavClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5" onClick={handleNavClick}>
             <img 
               src={logo} 
               alt="H.K. Oswal Hosiery Sales Depot" 
@@ -58,6 +62,7 @@ export function Header() {
                 <DropdownMenuItem key={item.name} asChild>
                   <Link
                     to={item.href}
+                    onClick={handleNavClick}
                     className={`w-full cursor-pointer px-3 py-2.5 text-sm font-medium transition-colors ${
                       isActive(item.href) 
                         ? "text-primary bg-primary/10" 
@@ -78,6 +83,7 @@ export function Header() {
             <Link
               key={item.name}
               to={item.href}
+              onClick={handleNavClick}
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive(item.href) ? "text-primary" : "text-foreground"
               }`}
