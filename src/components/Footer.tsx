@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import footerlogo from "@/assets/hk4.png";
 
 export function Footer() {
@@ -37,6 +37,17 @@ export function Footer() {
               >
                 <Phone className="h-5 w-5 flex-shrink-0" />
                 <span>+91 141-4043400</span>
+              </a>
+              
+              <a
+                href="https://wa.me/9929662222"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp HK Oswal"
+                className="flex items-center gap-3 bg-green-500/10 text-green-600 dark:text-green-500 px-4 py-3 rounded-lg font-semibold hover:bg-green-500/20 transition-all shadow-sm hover:shadow-md w-full sm:w-auto"
+              >
+                <MessageCircle className="h-5 w-5 flex-shrink-0" />
+                <span>WhatsApp Us</span>
               </a>
               
               <div className="flex items-start gap-3">
