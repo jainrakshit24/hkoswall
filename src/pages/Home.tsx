@@ -21,6 +21,11 @@ export default function Home() {
   const whyChooseAnim = useScrollAnimation(0.2);
   const testimonialsAnim = useScrollAnimation(0.2);
   const ctaAnim = useScrollAnimation(0.2);
+
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -29,10 +34,10 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl font-serif font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Jaipur’s Premium Store for Readymade Garments & Woolens
+                Jaipur's Premium Store for Readymade Garments & Woolens
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since July 1957, H.K. Oswal has proudly stood as Jaipur’s leading destination for premium ready made garments and fine woolen wear. Built on a foundation of family values, skilled craftsmanship, and genuine care, our tradition spans over 68 years and multiple generations. We’ve built lasting relationships with more than a million families, earning trust through unwavering commitment and timeless quality.
+                Since July 1957, H.K. Oswal has proudly stood as Jaipur's leading destination for premium ready made garments and fine woolen wear. Built on a foundation of family values, skilled craftsmanship, and genuine care, our tradition spans over 68 years and multiple generations. We've built lasting relationships with more than a million families, earning trust through unwavering commitment and timeless quality.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-primary/10 px-4 py-2.5 rounded-full border border-primary/20">
@@ -50,13 +55,13 @@ export default function Home() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="group">
-                  <Link to="/about">
+                  <Link to="/about" onClick={handleLinkClick}>
                     Discover Our Legacy
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <Link to="/visit-us">Visit Our Store</Link>
+                  <Link to="/visit-us" onClick={handleLinkClick}>Visit Our Store</Link>
                 </Button>
               </div>
             </div>
@@ -99,10 +104,10 @@ export default function Home() {
                   <h2 className="text-2xl font-serif font-semibold">Our Story</h2>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Step inside the legend. Meet the minds, the moves, and the legacy behind Jaipur’s most iconic garments and woolen destination.
+                  Step inside the legend. Meet the minds, the moves, and the legacy behind Jaipur's most iconic garments and woolen destination.
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto text-primary">
-                  <Link to="/about">
+                  <Link to="/about" onClick={handleLinkClick}>
                     Read Our History <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -121,7 +126,7 @@ export default function Home() {
                   Located in the heart of Jaipur, we've been serving the community for generations. Visit us to experience the warmth of personal service and quality products that have made us a trusted name.
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto text-primary">
-                  <Link to="/visit-us">
+                  <Link to="/visit-us" onClick={handleLinkClick}>
                     Find Our Store <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -162,7 +167,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Button asChild size="lg" variant="outline">
-              <Link to="/offerings">View All Offerings</Link>
+              <Link to="/offerings" onClick={handleLinkClick}>View All Offerings</Link>
             </Button>
           </div>
         </div>
@@ -198,7 +203,7 @@ export default function Home() {
               ].map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
-                    <Link to="/gallery" className="block group">
+                    <Link to="/gallery" onClick={handleLinkClick} className="block group">
                       <Card className="overflow-hidden border-none shadow-lg hover:shadow-2xl transition-all">
                         <CardContent className="p-0">
                           <div className="relative aspect-[4/3] overflow-hidden">
@@ -224,7 +229,7 @@ export default function Home() {
           </Carousel>
           <div className="text-center mt-10">
             <Button asChild size="lg">
-              <Link to="/gallery">
+              <Link to="/gallery" onClick={handleLinkClick}>
                 View Full Gallery
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -272,7 +277,7 @@ export default function Home() {
               {
                 icon: Package,
                 title: "Curated Selection",
-                desc: "Handpicked brands and exclusive styles, curated for today’s fashionable families seeking something special.",
+                desc: "Handpicked brands and exclusive styles, curated for today's fashionable families seeking something special.",
               },
             ].map((feature, idx) => (
               <Card key={typeof feature.title === 'string' ? feature.title : idx} className="border-none shadow-md hover:shadow-lg transition-shadow text-center">
@@ -336,7 +341,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Button asChild size="lg" variant="outline">
-              <Link to="/testimonials">Read More Reviews</Link>
+              <Link to="/testimonials" onClick={handleLinkClick}>Read More Reviews</Link>
             </Button>
           </div>
         </div>
@@ -359,13 +364,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/visit-us">
+              <Link to="/visit-us" onClick={handleLinkClick}>
                 Visit Our Store
                 <MapPin className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link to="/offerings">Explore Products</Link>
+              <Link to="/offerings" onClick={handleLinkClick}>Explore Products</Link>
             </Button>
           </div>
         </div>

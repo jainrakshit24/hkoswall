@@ -219,7 +219,7 @@ export default function VisitUs() {
             </p>
           </div>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Bapu+Bazaar+Jaipur"
+            href="https://maps.app.goo.gl/Hx1XyCL9E17eeLiY7"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full max-w-2xl mx-auto h-104 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow cursor-pointer group"
