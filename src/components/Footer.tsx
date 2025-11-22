@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import footerlogo from "@/assets/hk4.png";
 
 export function Footer() {
@@ -40,7 +41,7 @@ export function Footer() {
               </a>
               
               <a
-                href="https://wa.me/9929662222"
+                href="https://wa.me/919929662222"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp HK Oswal"
@@ -66,31 +67,34 @@ export function Footer() {
             <h4 className="text-lg md:text-xl font-semibold text-foreground">Quick Links</h4>
             <ul className="space-y-3 text-sm md:text-base">
               <li>
-                <a 
-                  href="/about" 
+                <Link 
+                  to="/about"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors"></span>
                   Our History
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/offerings" 
+                <Link 
+                  to="/offerings"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors"></span>
                   What We Offer
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/visit-us" 
+                <Link 
+                  to="/visit-us"
+                  onClick={() => window.scrollTo(0, 0)}
                   className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors"></span>
                   Visit Our Store
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
