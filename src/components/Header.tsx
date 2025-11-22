@@ -24,7 +24,7 @@ export function Header() {
   const isActive = (path: string) => location.pathname === path;
 
   const handleNavClick = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
